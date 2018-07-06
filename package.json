@@ -1,0 +1,9 @@
+{
+  "name": "textback-phone-widget",
+  "description": "",
+  "homepage": "https://stackblitz.com/edit/textback-phone-widget",
+  "dependencies": {
+    "jquery": "3.3.1"
+  },
+  "version": "1.0.0"
+}

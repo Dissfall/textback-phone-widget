@@ -1,0 +1,41 @@
+<html>
+<head>
+
+  <title>textback-phone-widget</title>  
+</head>
+<body>
+<link rel="stylesheet" href="./css/main.css">
+
+<!-- === add in HEAD === -->
+<script src="https://unpkg.com/@textback/notification-widget@2.0.0-7413/build/sdk.js"></script>
+<!-- =================== -->
+
+<!-- Add in BODY -->
+
+<div class="tb-notification-widget-container" style="text-align: center">
+
+  <div class="content-box">
+    <img src="http://queens.by/img/slide_head_3.png">
+    <div class="tb-widget-title">Title</div>
+    <div class="input-box">
+      <input id="widget-mobile" type="tel" name="phone" autofocus="true" placeholder="Enter phone number"><br>
+      <div class="valid-box">✔</div>
+      <div class="invalid-box">✖</div>
+      <div class="invalid-phone-tooltip invalid-phone-tooltip-lgt"></div>
+    </div>
+  </div>
+
+  <div id="subscribe-box">
+    <div class="tb-widget-desc">Description</div>
+    <div class="widget-button-bar">
+      <!-- Insert subscribe buttons here -->
+      <!-- A large number of buttons requires a larger width of the parent block -->
+      <button id="subscribe-viber" class="subscribe-button"></button>
+      <button id="subscribe-vk" class="subscribe-button"></button>
+      <button id="subscribe-fb" class="subscribe-button"></button>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* === add in end of css === */
+
+body {background-color: #808080}
+*{box-sizing:border-box;}
+div,span{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+input,button{text-decoration:none;outline:0px;border:none;}
+input:focus::-webkit-input-placeholder{transition:.2s;opacity:0;text-indent:100px;}
+input:focus::-moz-placeholder{transition:.2s;opacity:0;text-indent:100px;}
+input:focus:-moz-placeholder{transition:.2s;opacity:0;text-indent:100px;}
+input:focus:-ms-input-placeholder{transition:.2s;opacity:0;text-indent:100px;}
+input::-webkit-input-placeholder{transition:.2s;opacity:1;color:#808080;}
+input::-moz-placeholder{transition:.2s;opacity:1;color:#808080;}
+input:-moz-placeholder{transition:.2s;opacity:1;color:#808080;}
+input:-ms-input-placeholder{transition:.2s;opacity:1;color:#808080;}
+::-moz-selection{background:rgba(150, 14, 98, 0.1);}
+::selection{background:rgba(150, 14, 98, 0.1);}
+
+.tb-notification-widget-container {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  color: black;
+  border-radius: 5px;
+  z-index: 1;
+  width: 400px;                         /* Widget width */
+  box-sizing: border-box;
+}
+
+.tb-widget-title{
+  font-family: Helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding: 0 0 25px 0;
+}
+
+.tb-widget-desc{
+  font-family: Helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.content-box {
+  text-align: left;
+  background-color: white;
+  border-radius: 3px;
+  padding: 25px;
+}
+
+.content-box > input {
+  margin-bottom: 15px;
+  height: 40px;
+  text-align: center;
+  font-family: cursive;
+  font-size: medium;
+}
+
+.subscribe-box {
+  padding: 5px;
+  margin: 0;
+}
+
+.input-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0 0;
+  height: 31px;
+  margin: 0;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.widget-button-bar {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+.widget-button-bar :first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.widget-button-bar :last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.subscribe-button {
+  text-align: center;
+  width: 100%;
+  color: white;
+  cursor:pointer!important;
+}
+
+.subscribe-button:hover {
+  transition: 0.3s;
+  box-shadow:0 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.subscribe-button > span {
+  vertical-align: middle;
+}
+
+.subscribe-button > span > svg {
+  vertical-align: middle;
+  height: 40px
+}
+
+.invalid-box, .valid-box {
+    font-size: 31px;
+    position: absolute;
+    display: none;
+    top: 0;
+}
+
+.valid-box {
+    color: #81ea81;
+    right: 10px;
+}
+
+.invalid-box {
+    color: #e67171;
+    right: 5px;
+}
+
+.invalid-phone-tooltip {
+    font-size: 12px;
+    color: #d03b3b;
+    font-style: italic;
+    margin: 3px 0 0;
+}
